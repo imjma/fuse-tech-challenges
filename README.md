@@ -24,3 +24,73 @@ Please include a list of technologies and resources used in your application.
 Please include a brief instruction of how to run your application.   
 
 Please outline any possible improvements (any aspect) could be made, if you were to make your application production-ready. 
+
+# Overview
+
+## Requirement
+
+[PHP](http://php.net) >= 5.6.4
+
+[Composer](https://getcomposer.org) >= 1.2.4
+
+## Resources
+
+[Lumen](https://lumen.laravel.com) >= 5.3
+
+[Vuejs](https://vuejs.org) >= 2.0
+
+# Installation
+
+    composer create-project
+
+# Solution
+
+## Challenge 1 - Fizz Buzz
+
+    php artisan salmat:fizzbuzz
+    
+> file: app/Console/Commands/FizzBuzz.php
+
+## Challenge 2 - Twitter Feed
+
+Register and add twitter api key and token into `.env` from [twitter apps](https://apps.twitter.com)
+
+Start up the server
+
+    php -S localhost:8000 -t public
+    
+Open the url in the browser
+
+    http://localhost:8000/search
+    
+As default, it will search 'engineering' from twitter,
+you can type the keyword you want to search
+
+It will get json output that search tweets from twitter, api addresss:
+
+    http://localhost:8000/q/{keyword}
+    
+> files:
+
+    app/Http/Controllers/TwitterController.php
+    app/Providers/TwitterServiceProvider.php
+    public/assets/search.js
+    resources/views/twitter/search.php
+    
+### Resources of JavaScript and CSS
+
+    bootstrap
+    vuejs
+    axios
+    lodash
+    moment
+
+# TODO
+
+- show images in tweet
+- CROS
+- handle mention
+- handle tweet thread
+- handle twitter api rate limit
+- handle retweet details
+- auto refresh tweets (streaming api?)

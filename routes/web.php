@@ -14,3 +14,11 @@
 $app->get('/', function () use ($app) {
     return $app->version();
 });
+
+$app->get('/q/{keyword}', [
+    'uses' => 'TwitterController@query'
+]);
+
+$app->get('/search', function() {
+    return view('twitter.search');
+});
