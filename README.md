@@ -55,6 +55,11 @@ Please outline any possible improvements (any aspect) could be made, if you were
 
 Register and add twitter api key and token into `.env` from [twitter apps](https://apps.twitter.com)
 
+    TWITTER_CONSUMER_KEY=
+    TWITTER_CONSUMER_SECRET=
+    TWITTER_ACCESS_TOKEN=
+    TWITTER_ACCESS_TOKEN_SECRET=
+
 Start up the server
 
     php -S localhost:8000 -t public

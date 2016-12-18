@@ -40,14 +40,17 @@ class FizzBuzz extends Command
         for ($i = 1; $i <= 100; $i++) {
             $output = '';
 
+            // multiples of 3, print fizz
             if (($i % 3) == 0) {
                 $output .= 'Fizz';
             }
 
+            // multiples of 5, print buzz
             if (($i % 5) == 0){
                 $output .= 'Buzz';
             }
 
+            // print number if none of above
             if ($output === '') {
                 $output = $i;
             }
