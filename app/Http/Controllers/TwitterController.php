@@ -29,7 +29,7 @@ class TwitterController extends Controller
             return response()->json([]);
         }
 
-        // twitter connnection
+        // twitter connection
         $connection = app(\TwitterConnection::class);
 
         $statuses = $connection->get("search/tweets", ["count" => $count, "q" => $keyword]);
