@@ -35,9 +35,14 @@ Please outline any possible improvements (any aspect) could be made, if you were
 
 ## Resources
 
-[Lumen](https://lumen.laravel.com) >= 5.3
-
-[Vuejs](https://vuejs.org) >= 2.0
+- [Lumen](https://lumen.laravel.com) >= 5.3
+- [Vuejs](https://vuejs.org) >= 2.0
+- [twitteroauth](https://twitteroauth.com)
+- [Bootstrap](http://getbootstrap.com) >= 3
+- [jQuery](https://jquery.com)
+- [axios](https://github.com/mzabriskie/axios)
+- [lodash](https://lodash.com)
+- [moment](http://momentjs.com)
 
 # Installation
 
@@ -82,18 +87,10 @@ It will get json output that search tweets from twitter, api addresss:
     public/assets/search.js
     resources/views/twitter/search.php
     
-### Resources of JavaScript and CSS
-
-    bootstrap
-    vuejs
-    axios
-    lodash
-    moment
-
 # TODO
 
 - show images in tweet
-- CROS
+- cross domain attack
 - handle mention
 - handle tweet thread
 - handle twitter api rate limit
